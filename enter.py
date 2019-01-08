@@ -8,7 +8,7 @@ import itchat
 
 
 def init_config():
-    with open('/Users/hualiao/PycharmProjects/CQUTInformer/config.json') as config:
+    with open('./config.json') as config:
         config_dict=json.load(config)
         globalStore._kw=config_dict['kw']
         globalStore._account_sid=config_dict['account_sid']
